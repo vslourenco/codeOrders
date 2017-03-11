@@ -33,7 +33,8 @@ class OrdersServiceFactory implements FactoryInterface
     public function __invoke(ContainerInterface $container, $requestedName, array $options = null)
     {
         $orderRepository = $container->get('CodeOrders\V1\Rest\Orders\OrdersRepository');
+        $userRepository = $container->get("CodeOrders\V1\Rest\Users\UsersRepository");
 
-        return new OrdersService($orderRepository);
+        return new OrdersService($orderRepository, $userRepository);
     }
 }

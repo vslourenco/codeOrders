@@ -1,0 +1,23 @@
+<ion-header-bar class="bar-positive">
+    <h1 class="title">Pedidos Online - Login</h1>
+</ion-header-bar>
+<ion-content class="padding scroll-bg">
+    <br/>
+    <div class="list list-inset">
+        <label class="item item-input">
+            <input type="text" placeholder="Username" ng-model="data.username">
+        </label>
+        <br/>
+        <label class="item item-input">
+            <input type="password" placeholder="Sua Senha" ng-model="data.password">
+        </label>
+        <br/>
+        <button class="button button-outline button-block button-stable" ng-click="login(data)">
+            Login
+        </button>
+        <br>
+        <div>
+            {{error_login}}
+        </div>
+    </div>
+</ion-content>

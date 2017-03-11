@@ -1,6 +1,7 @@
 <?php
 namespace CodeOrders\V1\Rest\Products;
 
+use CodeOrders\V1\Rest\Users\UsersRepository;
 use ZF\ApiProblem\ApiProblem;
 use ZF\Rest\AbstractResourceListener;
 
@@ -11,14 +12,19 @@ class ProductsResource extends AbstractResourceListener
      * @var ProductsRepository
      */
     private $repository;
+    /**
+     * @var UsersRepository
+     */
+    private $usersRepository;
 
     /**
      * ProductsResource constructor.
      * @param ProductsRepository $repository
      */
-    public function __construct(ProductsRepository $repository)
+    public function __construct(ProductsRepository $repository, UsersRepository $usersRepository)
     {
         $this->repository = $repository;
+        $this->usersRepository = $usersRepository;
     }
 
     /**
@@ -29,7 +35,14 @@ class ProductsResource extends AbstractResourceListener
      */
     public function create($data)
     {
-        return $this->repository->insert($data);
+        $user = $this->usersRepository->findByUsername($this->getIdentity()->getRoleId());
+
+        if($user->getRole() == "admin") {
+            return $this->repository->insert($data);
+        }
+
+        return new ApiProblem(403, "The user has not access to this function.");
+
     }
 
     /**
@@ -40,7 +53,13 @@ class ProductsResource extends AbstractResourceListener
      */
     public function delete($id)
     {
-        return $this->repository->delete($id);
+        $user = $this->usersRepository->findByUsername($this->getIdentity()->getRoleId());
+
+        if($user->getRole() == "admin") {
+            return $this->repository->delete($id);
+        }
+
+        return new ApiProblem(403, "The user has not access to this function.");
     }
 
     /**
@@ -119,6 +138,12 @@ class ProductsResource extends AbstractResourceListener
      */
     public function update($id, $data)
     {
-        return $this->repository->update($id, $data);
+        $user = $this->usersRepository->findByUsername($this->getIdentity()->getRoleId());
+
+        if($user->getRole() == "admin") {
+            return $this->repository->update($id, $data);
+        }
+
+        return new ApiProblem(403, "The user has not access to this function.");
     }
 }

@@ -30,7 +30,7 @@ class OrdersResource extends AbstractResourceListener
      */
     public function create($data)
     {
-        $result = $this->service->insert($data);
+        $result = $this->service->insert($data, $this->getIdentity());
 
         if($result == "error"){
             return new ApiProblem(405, 'Error processing order');
@@ -46,7 +46,7 @@ class OrdersResource extends AbstractResourceListener
      */
     public function delete($id)
     {
-        return new ApiProblem(405, 'The DELETE method has not been defined for individual resources');
+        return $this->repository->delete($id);
     }
 
     /**
@@ -68,7 +68,7 @@ class OrdersResource extends AbstractResourceListener
      */
     public function fetch($id)
     {
-        return new ApiProblem(405, 'The GET method has not been defined for individual resources');
+        return $this->service->find($id, $this->getIdentity());
     }
 
     /**
@@ -79,7 +79,7 @@ class OrdersResource extends AbstractResourceListener
      */
     public function fetchAll($params = [])
     {
-        return $this->repository->findAll();
+        return $this->service->findAll($this->getIdentity());
     }
 
     /**
@@ -125,6 +125,6 @@ class OrdersResource extends AbstractResourceListener
      */
     public function update($id, $data)
     {
-        return new ApiProblem(405, 'The PUT method has not been defined for individual resources');
+        return $this->repository->update($id, $data);
     }
 }
