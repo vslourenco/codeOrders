@@ -59,7 +59,17 @@ angular.module('starter', ['ionic', 'starter.controllers', 'angular-oauth2'])
             url: '/create',
             views: {
                 'create-tab': {
-                    templateUrl: 'templates/create.html'
+                    templateUrl: 'templates/create.html',
+                    controller: 'OrdersNewCtrl'
+                }
+            }
+        })
+        .state('tabs.show', {
+            url: '/orders/:id',
+            views: {
+                'orders-tab': {
+                    templateUrl: 'templates/order-show.html',
+                    controller: 'OrderShowCtrl'
                 }
             }
         })

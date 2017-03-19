@@ -2,11 +2,11 @@
 /**
  * Created by PhpStorm.
  * User: Vinicius
- * Date: 25/02/2017
- * Time: 20:03
+ * Date: 18/03/2017
+ * Time: 22:47
  */
 
-namespace CodeOrders\V1\Rest\Orders;
+namespace CodeOrders\V1\Rest\Clients;
 
 
 use Interop\Container\ContainerInterface;
@@ -18,7 +18,7 @@ use Zend\ServiceManager\Exception\ServiceNotCreatedException;
 use Zend\ServiceManager\Exception\ServiceNotFoundException;
 use Zend\ServiceManager\Factory\FactoryInterface;
 
-class OrdersRepositoryFactory implements FactoryInterface
+class ClientsTableGatewayFactory implements FactoryInterface
 {
 
     /**
@@ -36,13 +36,10 @@ class OrdersRepositoryFactory implements FactoryInterface
     public function __invoke(ContainerInterface $container, $requestedName, array $options = null)
     {
         $dbAdapter = $container->get('DbAdapter');
-        $hydrator = new HydratingResultSet(new ClassMethods(), new OrdersEntity());
+        $hydrator = new HydratingResultSet(new ClassMethods(), new ClientsEntity());
 
-        $tableGateway = new TableGateway('orders', $dbAdapter, null, $hydrator);
+        $tableGateway = new TableGateway('clients', $dbAdapter, null, $hydrator);
 
-        $orderItemTableGateway = $container->get("CodeOrders\V1\Rest\Orders\OrderItemTableGateway");
-        $clientsTableGateway = $container->get("CodeOrders\V1\Rest\Clients\ClientsTableGateway");
-
-        return new OrdersRepository($tableGateway, $orderItemTableGateway, $clientsTableGateway);
+        return $tableGateway;
     }
 }

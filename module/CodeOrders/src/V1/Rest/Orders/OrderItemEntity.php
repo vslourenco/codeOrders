@@ -15,6 +15,7 @@ class OrderItemEntity
     protected $id;
     protected $order_id;
     protected $product_id;
+    protected $product_name;
     protected $quantity;
     protected $price;
     protected $total;
@@ -70,6 +71,24 @@ class OrderItemEntity
     public function setProductId($product_id)
     {
         $this->product_id = $product_id;
+        return $this;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getProductName()
+    {
+        return $this->product_name;
+    }
+
+    /**
+     * @param mixed $product_name
+     * @return OrderItemEntity
+     */
+    public function setProductName($product_name)
+    {
+        $this->product_name = $product_name;
         return $this;
     }
 

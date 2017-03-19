@@ -26,11 +26,16 @@ class OrdersRepository
      * @var AbstractTableGateway
      */
     private $orderItemTableGateway;
+    /**
+     * @var AbstractTableGateway
+     */
+    private $clientsTableGateway;
 
-    public function __construct(AbstractTableGateway $tableGateway, AbstractTableGateway $orderItemTableGateway)
+    public function __construct(AbstractTableGateway $tableGateway, AbstractTableGateway $orderItemTableGateway, AbstractTableGateway $clientsTableGateway)
     {
         $this->tableGateway = $tableGateway;
         $this->orderItemTableGateway = $orderItemTableGateway;
+        $this->clientsTableGateway = $clientsTableGateway;
     }
 
     public function findAll($data){
@@ -59,6 +64,41 @@ class OrdersRepository
 
     public function find($data){
 
+        $resultSet = $this->tableGateway->select($data);
+
+        if($resultSet->count() == 1){
+            $hydrator = new ClassMethods();
+            $hydrator->addStrategy('items', new OrderItemHydratorStrategy(new ClassMethods()));
+            $order = $resultSet->current();
+
+            $client = $this->clientsTableGateway
+                ->select(['id'=>$order->getClientId()])
+                ->current();
+
+            $sql = $this->orderItemTableGateway->getSql();
+            $select = $sql->select();
+            $select->join(
+                'products',
+                'order_items.product_id = products.id',
+                ['product_name' => 'name']
+            )
+                ->where(['order_id' => (int)$data["id"]])
+                ->order('product_name ASC');;
+
+            $items = $this->orderItemTableGateway->selectWith($select);
+
+            $order->setClient($client);
+
+            foreach ($items as $item) {
+                $order->addItem($item);
+            }
+
+            $data = $hydrator->extract($order);
+            return $data;
+        }
+
+        return new ApiProblem(403, "The user has not access to this info.");
+        /*
         $hydrator = new ClassMethods();
         $hydrator->addStrategy('items', new OrderItemHydratorStrategy(new ClassMethods()));
 
@@ -76,6 +116,7 @@ class OrdersRepository
         }
 
         return new ApiProblem(403, "The user has not access to this info.");
+        */
     }
 
     public function insert(array $data){

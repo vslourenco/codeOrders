@@ -35,10 +35,7 @@ class ClientsRepositoryFactory implements FactoryInterface
      */
     public function __invoke(ContainerInterface $container, $requestedName, array $options = null)
     {
-        $dbAdapter = $container->get('DbAdapter');
-        $hydrator = new HydratingResultSet(new ClassMethods(), new ClientsEntity());
-
-        $tableGateway = new TableGateway('clients', $dbAdapter, null, $hydrator);
+        $tableGateway = $container->get('CodeOrders\V1\Rest\Clients\ClientsTableGateway');
 
         return new ClientsRepository($tableGateway);
     }

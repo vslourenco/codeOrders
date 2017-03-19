@@ -531,6 +531,7 @@ return [
             \CodeOrders\V1\Rest\Products\ProductsRepository::class => \CodeOrders\V1\Rest\Products\ProductsRepositoryFactory::class,
             \CodeOrders\V1\Rest\Clients\ClientsResource::class => \CodeOrders\V1\Rest\Clients\ClientsResourceFactory::class,
             \CodeOrders\V1\Rest\Clients\ClientsRepository::class => \CodeOrders\V1\Rest\Clients\ClientsRepositoryFactory::class,
+            \CodeOrders\V1\Rest\Clients\ClientsTableGateway::class => \CodeOrders\V1\Rest\Clients\ClientsTableGatewayFactory::class,
         ],
     ],
     'zf-mvc-auth' => [
