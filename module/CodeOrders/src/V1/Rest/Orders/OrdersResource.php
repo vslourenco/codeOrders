@@ -125,6 +125,6 @@ class OrdersResource extends AbstractResourceListener
      */
     public function update($id, $data)
     {
-        return $this->repository->update($id, $data);
+        return $this->repository->updateAll($id, $data);
     }
 }

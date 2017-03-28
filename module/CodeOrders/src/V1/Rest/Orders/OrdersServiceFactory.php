@@ -34,7 +34,8 @@ class OrdersServiceFactory implements FactoryInterface
     {
         $orderRepository = $container->get('CodeOrders\V1\Rest\Orders\OrdersRepository');
         $userRepository = $container->get("CodeOrders\V1\Rest\Users\UsersRepository");
+        $productRepository = $container->get("CodeOrders\V1\Rest\Products\ProductsRepository");
 
-        return new OrdersService($orderRepository, $userRepository);
+        return new OrdersService($orderRepository, $userRepository, $productRepository);
     }
 }

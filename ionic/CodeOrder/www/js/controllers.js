@@ -22,7 +22,7 @@ angular.module('starter.controllers', [])
                 $http.get('http://localhost:8080/orders').then(
                     function(data) {
                         $scope.orders = data.data._embedded.orders;
-                        console.log($scope.orders);
+                        //console.log($scope.orders);
                     }
                 )
             }
@@ -71,6 +71,7 @@ angular.module('starter.controllers', [])
                 $scope.order = {
                     client_id: '',
                     ptype_id: '',
+                    status: '',
                     item: []
                 };
             };
@@ -99,5 +100,98 @@ angular.module('starter.controllers', [])
                 )
             };
 
+            $scope.addItem = function () {
+                $scope.order.item.push({
+                    product_id:'',
+                    quantity: '',
+                    price: 0,
+                    total: 0
+                });
+            };
+
+            $scope.setPrice = function (index) {
+                var product_id = $scope.order.item[index].product_id;
+                for(var i in $scope.products){
+                    if($scope.products.hasOwnProperty(i) && $scope.products[i].id == product_id){
+                        $scope.order.item[index].price = $scope.products[i].price;
+                        break;
+                    }
+                }
+
+                $scope.calculateTotalRow(index);
+            }
+
+            $scope.calculateTotalRow = function(index){
+                $scope.order.item[index].total = $scope.order.item[index].quantity * $scope.order.item[index].price;
+                calculateTotal();
+            }
+
+            calculateTotal = function () {
+                $scope.order.total = 0;
+                for(var i in $scope.order.item){
+                    if($scope.order.item.hasOwnProperty(i)){
+                        $scope.order.total += $scope.order.item[i].total;
+                    }
+                }
+            }
+
+            $scope.save = function () {
+              $http.post("http://localhost:8080/orders", $scope.order).then(
+                  function (data) {
+                      $scope.resetOrder();
+                      $state.go('tabs.orders');
+                  }
+              )
+            };
+
+            $scope.resetOrder();
+            $scope.getClients();
+            $scope.getPtypes();
+            $scope.getProducts();
+
         }
     ])
+    .controller('LogoutCtrl', ['$scope', 'logout',
+        function ($scope, logout) {
+
+            $scope.logout = function(){
+                logout.logout();
+                $state.go('login');
+            }
+        }
+    ])
+    .controller("RefeshModalCtrl", ['$rootScope', '$scope', 'OAuth', 'authService', '$timeout', '$state', 'logout', function($rootScope, $scope, OAuth, authService, $timeout, $state, logout){
+
+        function destroyModal() {
+            if($rootScope.modal){
+                $rootScope.modal.hide();
+                $rootScope.modal = false;
+            }
+        }
+
+        $scope.$on('event:auth-loginConfirmed', function () {
+            destroyModal();
+        });
+
+        $scope.$on('event:auth-loginCancelled', function () {
+            destroyModal();
+            logout.logout();
+        });
+
+        $scope.$on('$stateChangeStart', function (event) {
+            if($rootScope.modal) {
+                authService.loginCancelled();
+                event.preventDefault();
+                $state.go('login');
+            }
+        });
+
+        OAuth.getRefreshToken().then(function () {
+            $timeout(function () {
+                authService.loginConfirmed();
+            },10000);
+        }, function () {
+            authService.loginCancelled();
+            $state.go('login');
+        });
+    }])

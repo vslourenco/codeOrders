@@ -10,4 +10,10 @@ return [
             \ZF\OAuth2\Service\OAuth2Server::class => \ZF\MvcAuth\Factory\NamedOAuth2ServerFactory::class,
         ],
     ],
+    'zf-oauth2' => [
+        'access_lifetime' => 3600,
+        'options' => [
+            'always_issue_new_refresh_token' => true
+        ]
+    ]
 ];

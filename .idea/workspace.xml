@@ -2,19 +2,23 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2a148d57-7ae2-4b91-9c4e-5618c3ffbf06" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ionic/CodeOrder/www/templates/order-show.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/module/CodeOrders/src/V1/Rest/Clients/ClientsTableGatewayFactory.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ionic/CodeOrder/www/js/services.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ionic/CodeOrder/www/templates/logout.html" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/ionic/CodeOrder/www/templates/home.html" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/autoload/zf-mvc-auth-oauth2-override.global.php" afterPath="$PROJECT_DIR$/config/autoload/zf-mvc-auth-oauth2-override.global.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ionic/CodeOrder/bower.json" afterPath="$PROJECT_DIR$/ionic/CodeOrder/bower.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ionic/CodeOrder/www/index.html" afterPath="$PROJECT_DIR$/ionic/CodeOrder/www/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ionic/CodeOrder/www/js/app.js" afterPath="$PROJECT_DIR$/ionic/CodeOrder/www/js/app.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ionic/CodeOrder/www/js/controllers.js" afterPath="$PROJECT_DIR$/ionic/CodeOrder/www/js/controllers.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ionic/CodeOrder/www/templates/orders.html" afterPath="$PROJECT_DIR$/ionic/CodeOrder/www/templates/orders.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/module/CodeOrders/config/module.config.php" afterPath="$PROJECT_DIR$/module/CodeOrders/config/module.config.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/module/CodeOrders/src/V1/Rest/Clients/ClientsRepositoryFactory.php" afterPath="$PROJECT_DIR$/module/CodeOrders/src/V1/Rest/Clients/ClientsRepositoryFactory.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/module/CodeOrders/src/V1/Rest/Orders/OrderItemEntity.php" afterPath="$PROJECT_DIR$/module/CodeOrders/src/V1/Rest/Orders/OrderItemEntity.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/module/CodeOrders/src/V1/Rest/Orders/OrdersEntity.php" afterPath="$PROJECT_DIR$/module/CodeOrders/src/V1/Rest/Orders/OrdersEntity.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ionic/CodeOrder/www/templates/create.html" afterPath="$PROJECT_DIR$/ionic/CodeOrder/www/templates/create.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ionic/CodeOrder/www/templates/tabs.html" afterPath="$PROJECT_DIR$/ionic/CodeOrder/www/templates/tabs.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/module/CodeOrders/src/V1/Rest/Orders/OrdersRepository.php" afterPath="$PROJECT_DIR$/module/CodeOrders/src/V1/Rest/Orders/OrdersRepository.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/module/CodeOrders/src/V1/Rest/Orders/OrdersRepositoryFactory.php" afterPath="$PROJECT_DIR$/module/CodeOrders/src/V1/Rest/Orders/OrdersRepositoryFactory.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/module/CodeOrders/src/V1/Rest/Orders/OrdersResource.php" afterPath="$PROJECT_DIR$/module/CodeOrders/src/V1/Rest/Orders/OrdersResource.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/module/CodeOrders/src/V1/Rest/Orders/OrdersService.php" afterPath="$PROJECT_DIR$/module/CodeOrders/src/V1/Rest/Orders/OrdersService.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/module/CodeOrders/src/V1/Rest/Orders/OrdersServiceFactory.php" afterPath="$PROJECT_DIR$/module/CodeOrders/src/V1/Rest/Orders/OrdersServiceFactory.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/module/CodeOrders/src/V1/Rest/Users/UsersRepository.php" afterPath="$PROJECT_DIR$/module/CodeOrders/src/V1/Rest/Users/UsersRepository.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/module/CodeOrders/src/V1/Rest/Users/UsersRepositoryFactory.php" afterPath="$PROJECT_DIR$/module/CodeOrders/src/V1/Rest/Users/UsersRepositoryFactory.php" />
     </list>
     <ignored path="CodeOrders-Curso.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -43,21 +47,31 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="order-show.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ionic/CodeOrder/www/templates/order-show.html">
+      <file leaf-file-name="app.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ionic/CodeOrder/www/js/app.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="13" column="32" lean-forward="true" selection-start-line="13" selection-start-column="32" selection-end-line="13" selection-end-column="32" />
+            <state relative-caret-position="190">
+              <caret line="29" column="35" lean-forward="true" selection-start-line="28" selection-start-column="16" selection-end-line="29" selection-end-column="35" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="orders.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ionic/CodeOrder/www/templates/orders.html">
+      <file leaf-file-name="logout.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ionic/CodeOrder/www/templates/logout.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="15" column="80" lean-forward="false" selection-start-line="15" selection-start-column="67" selection-end-line="15" selection-end-column="80" />
+            <state relative-caret-position="68">
+              <caret line="4" column="74" lean-forward="false" selection-start-line="4" selection-start-column="74" selection-end-line="4" selection-end-column="74" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="tabs.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ionic/CodeOrder/www/templates/tabs.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="136">
+              <caret line="8" column="34" lean-forward="false" selection-start-line="8" selection-start-column="34" selection-end-line="8" selection-end-column="34" />
               <folding />
             </state>
           </provider>
@@ -66,18 +80,40 @@
       <file leaf-file-name="controllers.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/ionic/CodeOrder/www/js/controllers.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="336">
-              <caret line="39" column="59" lean-forward="false" selection-start-line="39" selection-start-column="59" selection-end-line="39" selection-end-column="59" />
+            <state relative-caret-position="254">
+              <caret line="183" column="39" lean-forward="true" selection-start-line="183" selection-start-column="39" selection-end-line="183" selection-end-column="39" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="app.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ionic/CodeOrder/www/js/app.js">
+      <file leaf-file-name="services.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ionic/CodeOrder/www/js/services.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="540">
-              <caret line="62" column="42" lean-forward="false" selection-start-line="62" selection-start-column="42" selection-end-line="62" selection-end-column="42" />
+            <state relative-caret-position="455">
+              <caret line="44" column="9" lean-forward="true" selection-start-line="44" selection-start-column="9" selection-end-line="44" selection-end-column="9" />
+              <folding>
+                <element signature="e#0#45#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ionic/CodeOrder/www/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="337">
+              <caret line="48" column="78" lean-forward="false" selection-start-line="48" selection-start-column="63" selection-end-line="48" selection-end-column="78" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="zfr_cors.global.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/config/autoload/zfr_cors.global.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="153">
+              <caret line="12" column="40" lean-forward="false" selection-start-line="12" selection-start-column="40" selection-end-line="12" selection-end-column="40" />
               <folding />
             </state>
           </provider>
@@ -88,8 +124,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="JavaScript File" />
         <option value="HTML File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -97,6 +133,7 @@
     <findStrings>
       <find>findByUsername</find>
       <find>insertItem</find>
+      <find>OAuthToken</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -109,30 +146,21 @@
         <option value="$PROJECT_DIR$/module/CodeOrders/src/V1/Rest/Users/UsersMapper.php" />
         <option value="$PROJECT_DIR$/module/CodeOrders/src/V1/Rest/Orders/OrderItemTableGatewayFactory.php" />
         <option value="$PROJECT_DIR$/module/CodeOrders/src/V1/Rest/Orders/OrderItemHydratorStrategy.php" />
-        <option value="$PROJECT_DIR$/module/CodeOrders/src/V1/Rest/Users/UsersRepositoryFactory.php" />
         <option value="$PROJECT_DIR$/module/CodeOrders/src/V1/Rest/Products/ProductsEntity.php" />
-        <option value="$PROJECT_DIR$/module/CodeOrders/src/V1/Rest/Users/UsersRepository.php" />
         <option value="$PROJECT_DIR$/module/CodeOrders/src/V1/Rest/Products/ProductsRepositoryFactory.php" />
         <option value="$PROJECT_DIR$/module/CodeOrders/src/V1/Rest/Products/ProductsRepository.php" />
         <option value="$PROJECT_DIR$/ionic/CodeOrder/www/tabs.html" />
         <option value="$PROJECT_DIR$/ionic/CodeOrder/www/templates/home.html" />
-        <option value="$PROJECT_DIR$/ionic/CodeOrder/www/templates/create.html" />
-        <option value="$PROJECT_DIR$/ionic/CodeOrder/www/templates/tabs.html" />
-        <option value="$PROJECT_DIR$/config/autoload/zfr_cors.global.php" />
         <option value="$PROJECT_DIR$/ionic/CodeOrder/www/templates/login.html" />
         <option value="$PROJECT_DIR$/module/Application/src/Module.php" />
-        <option value="$PROJECT_DIR$/ionic/CodeOrder/www/index.html" />
         <option value="$PROJECT_DIR$/module/CodeOrders/src/V1/Rest/Orders/OrdersResourceFactory.php" />
-        <option value="$PROJECT_DIR$/module/CodeOrders/src/V1/Rest/Orders/OrdersServiceFactory.php" />
         <option value="$PROJECT_DIR$/module/CodeOrders/src/V1/Rest/Clients/ClientsEntity.php" />
         <option value="$PROJECT_DIR$/module/CodeOrders/src/V1/Rest/Users/UsersResourceFactory.php" />
-        <option value="$PROJECT_DIR$/module/CodeOrders/src/V1/Rest/Orders/OrdersResource.php" />
         <option value="$PROJECT_DIR$/module/CodeOrders/src/V1/Rest/Clients/ClientsResourceFactory.php" />
         <option value="$PROJECT_DIR$/module/CodeOrders/src/V1/Rest/Products/ProductsResourceFactory.php" />
         <option value="$PROJECT_DIR$/module/CodeOrders/src/V1/Rest/Users/UsersResource.php" />
         <option value="$PROJECT_DIR$/module/CodeOrders/src/V1/Rest/Clients/ClientsResource.php" />
         <option value="$PROJECT_DIR$/module/CodeOrders/src/V1/Rest/Products/ProductsResource.php" />
-        <option value="$PROJECT_DIR$/module/CodeOrders/src/V1/Rest/Orders/OrdersService.php" />
         <option value="$PROJECT_DIR$/module/CodeOrders/src/V1/Rest/Clients/ClientsRepository.php" />
         <option value="$PROJECT_DIR$/ionic/CodeOrder/www/templates/orders.html" />
         <option value="$PROJECT_DIR$/module/CodeOrders/config/module.config.php" />
@@ -142,8 +170,21 @@
         <option value="$PROJECT_DIR$/module/CodeOrders/src/V1/Rest/Orders/OrdersEntity.php" />
         <option value="$PROJECT_DIR$/module/CodeOrders/src/V1/Rest/Orders/OrderItemEntity.php" />
         <option value="$PROJECT_DIR$/ionic/CodeOrder/www/templates/order-show.html" />
+        <option value="$PROJECT_DIR$/module/CodeOrders/src/V1/Rest/Orders/OrdersResource.php" />
         <option value="$PROJECT_DIR$/module/CodeOrders/src/V1/Rest/Orders/OrdersRepository.php" />
+        <option value="$PROJECT_DIR$/module/CodeOrders/src/V1/Rest/Orders/OrdersServiceFactory.php" />
+        <option value="$PROJECT_DIR$/module/CodeOrders/src/V1/Rest/Users/UsersRepository.php" />
+        <option value="$PROJECT_DIR$/module/CodeOrders/src/V1/Rest/Users/UsersRepositoryFactory.php" />
+        <option value="$PROJECT_DIR$/ionic/CodeOrder/www/templates/create.html" />
+        <option value="$PROJECT_DIR$/module/CodeOrders/src/V1/Rest/Orders/OrdersService.php" />
+        <option value="$PROJECT_DIR$/config/autoload/global.php" />
+        <option value="$PROJECT_DIR$/config/autoload/zfr_cors.global.php" />
+        <option value="$PROJECT_DIR$/ionic/CodeOrder/www/templates/tabs.html" />
+        <option value="$PROJECT_DIR$/ionic/CodeOrder/www/templates/logout.html" />
+        <option value="$PROJECT_DIR$/config/autoload/zf-mvc-auth-oauth2-override.global.php" />
+        <option value="$PROJECT_DIR$/ionic/CodeOrder/www/index.html" />
         <option value="$PROJECT_DIR$/ionic/CodeOrder/www/js/app.js" />
+        <option value="$PROJECT_DIR$/ionic/CodeOrder/www/js/services.js" />
         <option value="$PROJECT_DIR$/ionic/CodeOrder/www/js/controllers.js" />
       </list>
     </option>
@@ -163,10 +204,9 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
-    <option name="width" value="1382" />
-    <option name="height" value="744" />
+    <option name="x" value="616" />
+    <option name="width" value="750" />
+    <option name="height" value="728" />
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
@@ -259,32 +299,6 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="templates" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="CodeOrders-Curso" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="CodeOrders-Curso" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ionic" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="CodeOrder" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="www" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="js" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
@@ -303,6 +317,9 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Apache24\htdocs\Curso_Code_Education\CodeOrders-Curso\ionic\CodeOrder\www\templates" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Apache24\htdocs\Curso_Code_Education\CodeOrders-Curso\ionic\CodeOrder\www\templates" />
     </key>
@@ -408,12 +425,17 @@
       <workItem from="1489887945463" duration="350000" />
       <workItem from="1489888311095" duration="40000" />
       <workItem from="1489932352375" duration="3419000" />
-      <workItem from="1489949672897" duration="2048000" />
+      <workItem from="1489949672897" duration="2458000" />
+      <workItem from="1490057884228" duration="1085000" />
+      <workItem from="1490138942043" duration="5726000" />
+      <workItem from="1490309041500" duration="4216000" />
+      <workItem from="1490483371348" duration="6651000" />
+      <workItem from="1490540493643" duration="11826000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="79763000" />
+    <option name="totallyTimeSpent" value="109677000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -425,10 +447,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
+    <frame x="616" y="0" width="750" height="728" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3023426" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5082459" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32913387" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -485,98 +507,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/module/CodeOrders/src/V1/Rest/Ptypes/PtypesCollection.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/module/CodeOrders/src/V1/Rest/Ptypes/PtypesEntity.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/composer.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/composer.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/composer.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/module/CodeOrders/src/V1/Rest/Users/UsersMapper.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="22" column="27" lean-forward="false" selection-start-line="22" selection-start-column="20" selection-end-line="22" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/module/CodeOrders/src/V1/Rest/Users/UsersCollection.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/module/CodeOrders/src/V1/Rest/Products/ProductsCollection.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ionic/CodeOrder/www/templates/home.html" />
-    <entry file="file://$PROJECT_DIR$/ionic/CodeOrder/www/templates/create.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="20">
-          <caret line="1" column="28" lean-forward="false" selection-start-line="1" selection-start-column="28" selection-end-line="1" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/modules.config.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="15" column="35" lean-forward="false" selection-start-line="15" selection-start-column="35" selection-end-line="15" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/autoload/zfr_cors.global.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="38" lean-forward="false" selection-start-line="12" selection-start-column="38" selection-end-line="12" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ionic/CodeOrder/www/templates/tabs.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="140">
-          <caret line="7" column="11" lean-forward="false" selection-start-line="7" selection-start-column="11" selection-end-line="7" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ionic/CodeOrder/www/templates/login.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="380">
-          <caret line="19" column="25" lean-forward="false" selection-start-line="19" selection-start-column="14" selection-end-line="19" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/module/CodeOrders/Module.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -595,13 +525,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="420">
           <caret line="24" column="0" lean-forward="false" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ionic/CodeOrder/www/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="460">
-          <caret line="23" column="7" lean-forward="false" selection-start-line="23" selection-start-column="7" selection-end-line="23" selection-end-column="7" />
         </state>
       </provider>
     </entry>
@@ -633,13 +556,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/module/CodeOrders/src/V1/Rest/Users/UsersRepository.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="398">
-          <caret line="62" column="52" lean-forward="false" selection-start-line="62" selection-start-column="36" selection-end-line="62" selection-end-column="52" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/module/CodeOrders/src/V1/Rest/Users/UsersEntity.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="300">
@@ -654,13 +570,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/module/CodeOrders/src/V1/Rest/Users/UsersRepositoryFactory.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="407">
-          <caret line="43" column="60" lean-forward="false" selection-start-line="43" selection-start-column="47" selection-end-line="43" selection-end-column="60" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/module/CodeOrders/src/V1/Rest/Clients/ClientsEntity.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="307">
@@ -672,20 +581,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="298">
           <caret line="28" column="4" lean-forward="false" selection-start-line="28" selection-start-column="4" selection-end-line="70" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/module/CodeOrders/src/V1/Rest/Orders/OrdersServiceFactory.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="427">
-          <caret line="35" column="86" lean-forward="true" selection-start-line="34" selection-start-column="89" selection-end-line="35" selection-end-column="86" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/module/CodeOrders/src/V1/Rest/Orders/OrdersService.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1300">
-          <caret line="72" column="42" lean-forward="false" selection-start-line="72" selection-start-column="42" selection-end-line="72" selection-end-column="42" />
         </state>
       </provider>
     </entry>
@@ -717,13 +612,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/module/CodeOrders/src/V1/Rest/Orders/OrdersResource.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1360">
-          <caret line="81" column="59" lean-forward="false" selection-start-line="81" selection-start-column="39" selection-end-line="81" selection-end-column="59" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/module/CodeOrders/src/V1/Rest/Clients/ClientsRepository.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="582">
@@ -749,13 +637,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1169">
           <caret line="79" column="44" lean-forward="false" selection-start-line="79" selection-start-column="44" selection-end-line="79" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/module/CodeOrders/config/module.config.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="361">
-          <caret line="533" column="59" lean-forward="false" selection-start-line="533" selection-start-column="13" selection-end-line="533" selection-end-column="59" />
         </state>
       </provider>
     </entry>
@@ -801,26 +682,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/module/CodeOrders/src/V1/Rest/Orders/OrdersRepository.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="387">
-          <caret line="82" column="40" lean-forward="false" selection-start-line="82" selection-start-column="36" selection-end-line="82" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ionic/CodeOrder/www/js/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="540">
-          <caret line="62" column="42" lean-forward="false" selection-start-line="62" selection-start-column="42" selection-end-line="62" selection-end-column="42" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/ionic/CodeOrder/www/templates/order-show.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
-          <caret line="13" column="32" lean-forward="true" selection-start-line="13" selection-start-column="32" selection-end-line="13" selection-end-column="32" />
-          <folding />
+          <caret line="13" column="32" lean-forward="false" selection-start-line="13" selection-start-column="32" selection-end-line="13" selection-end-column="32" />
         </state>
       </provider>
     </entry>
@@ -828,14 +693,184 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
           <caret line="15" column="80" lean-forward="false" selection-start-line="15" selection-start-column="67" selection-end-line="15" selection-end-column="80" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/module/CodeOrders/config/module.config.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="9010">
+          <caret line="530" column="59" lean-forward="false" selection-start-line="530" selection-start-column="13" selection-end-line="530" selection-end-column="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ionic/CodeOrder/www/templates/create.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="449">
+          <caret line="52" column="12" lean-forward="false" selection-start-line="52" selection-start-column="12" selection-end-line="52" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/module/CodeOrders/src/V1/Rest/Users/UsersRepository.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="449">
+          <caret line="72" column="0" lean-forward="false" selection-start-line="72" selection-start-column="0" selection-end-line="72" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/module/CodeOrders/src/V1/Rest/Users/UsersRepositoryFactory.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="292">
+          <caret line="38" column="55" lean-forward="true" selection-start-line="38" selection-start-column="55" selection-end-line="38" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/module/CodeOrders/src/V1/Rest/Orders/OrdersRepository.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="138" column="19" lean-forward="false" selection-start-line="138" selection-start-column="19" selection-end-line="138" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/module/CodeOrders/src/V1/Rest/Orders/OrdersServiceFactory.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="155">
+          <caret line="19" column="0" lean-forward="false" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/module/CodeOrders/src/V1/Rest/Orders/OrdersResource.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="437">
+          <caret line="127" column="43" lean-forward="false" selection-start-line="127" selection-start-column="34" selection-end-line="127" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/module/CodeOrders/src/V1/Rest/Orders/OrdersService.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="629">
+          <caret line="45" column="57" lean-forward="false" selection-start-line="45" selection-start-column="57" selection-end-line="45" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/autoload/global.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="476">
+          <caret line="28" column="6" lean-forward="false" selection-start-line="28" selection-start-column="6" selection-end-line="28" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ionic/CodeOrder/config.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/modules.config.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="15" column="35" lean-forward="false" selection-start-line="15" selection-start-column="35" selection-end-line="15" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/autoload/zfconfig.global.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/application.config.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/autoload/user.global.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/autoload/local.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/autoload/global-development.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/autoload/zfr_cors.global.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="12" column="40" lean-forward="false" selection-start-line="12" selection-start-column="40" selection-end-line="12" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ionic/CodeOrder/www/templates/tabs.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="34" lean-forward="false" selection-start-line="8" selection-start-column="34" selection-end-line="8" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/autoload/zf-mvc-auth-oauth2-override.global.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="17" column="5" lean-forward="true" selection-start-line="17" selection-start-column="5" selection-end-line="17" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ionic/CodeOrder/www/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="337">
+          <caret line="48" column="78" lean-forward="false" selection-start-line="48" selection-start-column="63" selection-end-line="48" selection-end-column="78" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ionic/CodeOrder/www/js/services.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="455">
+          <caret line="44" column="9" lean-forward="true" selection-start-line="44" selection-start-column="9" selection-end-line="44" selection-end-column="9" />
+          <folding>
+            <element signature="e#0#45#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ionic/CodeOrder/www/templates/logout.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="74" lean-forward="false" selection-start-line="4" selection-start-column="74" selection-end-line="4" selection-end-column="74" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ionic/CodeOrder/www/js/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="29" column="35" lean-forward="true" selection-start-line="28" selection-start-column="16" selection-end-line="29" selection-end-column="35" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ionic/CodeOrder/www/js/controllers.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="39" column="59" lean-forward="false" selection-start-line="39" selection-start-column="59" selection-end-line="39" selection-end-column="59" />
+        <state relative-caret-position="254">
+          <caret line="183" column="39" lean-forward="true" selection-start-line="183" selection-start-column="39" selection-end-line="183" selection-end-column="39" />
           <folding />
         </state>
       </provider>

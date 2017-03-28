@@ -134,7 +134,12 @@ class OrdersRepository
         return $this->orderItemTableGateway->getLastInsertValue();
     }
 
-    public function update($id, $data){
+    public function update($id, array $data){
+        $this->tableGateway->update($data, ['id' => (int)$id]);
+        return $id;
+    }
+
+    public function updateAll($id, $data){
         $hydrator = new ObjectProperty();
 
         $data = $hydrator->extract($data);

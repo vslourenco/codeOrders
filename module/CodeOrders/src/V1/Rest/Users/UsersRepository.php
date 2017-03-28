@@ -11,6 +11,8 @@ namespace CodeOrders\V1\Rest\Users;
 
 use Zend\Db\TableGateway\TableGatewayInterface;
 use Zend\Paginator\Adapter\DbTableGateway;
+use ZF\Apigility\Admin\Model\AuthenticationEntity;
+use ZF\MvcAuth\Identity\AuthenticatedIdentity;
 
 class UsersRepository
 {
@@ -19,10 +21,15 @@ class UsersRepository
      * @var TableGatewayInterface
      */
     private $tableGateway;
+    /**
+     * @var AuthenticatedIdentity
+     */
+    private $auth;
 
-    public function __construct(TableGatewayInterface $tableGateway)
+    public function __construct(TableGatewayInterface $tableGateway, AuthenticatedIdentity $auth)
     {
         $this->tableGateway = $tableGateway;
+        $this->auth = $auth;
     }
 
     public function findAll(){
@@ -62,5 +69,10 @@ class UsersRepository
         }
         $this->tableGateway->delete(['id'=>(int)$id]);
         return true;
+    }
+
+    public function getAuthenticated(){
+        $username = $this->auth->getAuthenticationIdentity()['user_id'];
+        return $this->findByUsername($username);
     }
 }
